@@ -13,6 +13,8 @@
 		3E859F6526B6D08C001293C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E859F6326B6D08C001293C3 /* Main.storyboard */; };
 		3E859F6726B6D08E001293C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E859F6626B6D08E001293C3 /* Assets.xcassets */; };
 		3E859F6A26B6D08E001293C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E859F6826B6D08E001293C3 /* LaunchScreen.storyboard */; };
+		3E859F7226B6D155001293C3 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E859F7126B6D155001293C3 /* VideoCapture.swift */; };
+		3E859F7426B6D65C001293C3 /* Predictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E859F7326B6D65C001293C3 /* Predictor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3E859F6626B6D08E001293C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E859F6926B6D08E001293C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E859F6B26B6D08E001293C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E859F7126B6D155001293C3 /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		3E859F7326B6D65C001293C3 /* Predictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predictor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				3E859F6626B6D08E001293C3 /* Assets.xcassets */,
 				3E859F6826B6D08E001293C3 /* LaunchScreen.storyboard */,
 				3E859F6B26B6D08E001293C3 /* Info.plist */,
+				3E859F7126B6D155001293C3 /* VideoCapture.swift */,
+				3E859F7326B6D65C001293C3 /* Predictor.swift */,
 			);
 			path = ComputerVisionTest;
 			sourceTree = "<group>";
@@ -137,9 +143,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E859F7226B6D155001293C3 /* VideoCapture.swift in Sources */,
 				3E859F6226B6D08C001293C3 /* ViewController.swift in Sources */,
 				3E859F5E26B6D08C001293C3 /* AppDelegate.swift in Sources */,
 				3E859F6026B6D08C001293C3 /* SceneDelegate.swift in Sources */,
+				3E859F7426B6D65C001293C3 /* Predictor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
