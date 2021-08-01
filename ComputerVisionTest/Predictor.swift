@@ -12,7 +12,7 @@ protocol PredictorDelegate: NSObject {
     func predictor(_ predictor: Predictor, points: [CGPoint])
 }
 
-class Predictor {
+final class Predictor {
     
     weak var delegate: PredictorDelegate?
     
@@ -27,13 +27,12 @@ class Predictor {
         }
     }
     
-    func bodyPoseHandler(request: VNRequest, error: Error?) {
+    private func bodyPoseHandler(request: VNRequest, error: Error?) {
         guard let observations = request.results as? [VNHumanBodyPoseObservation] else { return }
-        
         observations.forEach { processObservation($0) }
     }
     
-    func processObservation(_ observation: VNHumanBodyPoseObservation) {
+    private func processObservation(_ observation: VNHumanBodyPoseObservation) {
         do {
             let recognizedPoints = try observation.recognizedPoints(forGroupKey: .all)
             let displayPoints = recognizedPoints.map {

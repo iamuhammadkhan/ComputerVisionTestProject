@@ -8,11 +8,11 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
-    let videoCapture = VideoCapture()
-    var previewLayer: AVCaptureVideoPreviewLayer?
-    var pointsLayer = CAShapeLayer()
+    private let videoCapture = VideoCapture()
+    private lazy var previewLayer: AVCaptureVideoPreviewLayer? = nil
+    private lazy var pointsLayer = CAShapeLayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
